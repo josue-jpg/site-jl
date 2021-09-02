@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Hina Mincho', serif;
+}
+ 
+/*Classes Auxiliares*/ 
+
+body{background: #f4f2ec;}
+
+/*  DEFINIÇÔES GERAIS */
+
+
+.container{
+    width:100%;
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{clear: both;}
+
+/*FIM*/
+
+/*SCROL*/
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #888782 white;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #888782;
+    border-radius: 20px;
+    border: 3px solid white;
+  }
+
+/*SCROL*/
+/*   HEADER   */
+
+
+
+header{ 
+    padding:5px;
+}
+
+header.logo{
+    float: left;
+    cursor: pointer;
+}
+
+.logo h2{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+nav.desktop{
+    float: right;
+}
+
+.desktop li{
+    padding: 5px;
+    display: inline-block;
+ 
+}
+
+nav.desktop ul li a {
+    text-decoration: none;
+}
+
+nav.desktop li a{
+    font-size: 18px;
+    color: #656562;
+    text-decoration: none;
+    position: relative;
+    top: -35px;
+    left: 10px;
+}
+
+nav.desktop li a:hover{
+    border-bottom: 1px solid #4e4e4c;
+}
+
+nav.mobile{
+    display: none;
+}
+
+/*  FIM DO HEADER  */
+
+/*BANNER*/
+
+section.banner{
+    max-width: 100%;
+    height: 130vh;
+    margin: 0 auto;
+    background-image: url('../img/download.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.chamada{
+    text-align: center;
+    position: relative;
+    transform: translate(-1%,150%);
+}
+
+.chamada h2{
+    font-size: 70px;
+    color:#f4f2ec ;
+
+}
+
+.chamada p{
+    font-size: 25px;
+    color:#f4f2ec ;
+}
+
+/*FIM DO BANNER*/
+
+/* MEUS TRABALHOS */
+section.trabalhos{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.descricao{
+    text-align: center;
+    padding: 80px;
+}
+
+.descricao h2{
+    color: #79253d;
+    font-size: 40px;
+}
+
+.descricao p{
+    color:#9a9995;
+    font-size: 20px;
+}
+
+.descricao h3{
+    display: inline-block;
+    margin: 5px;
+    color: #79253d;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.descricao h3:hover{
+    color: #a0113a;
+}
+
+/*FIM*/
+
+
+
+/*MEU SERVIço*/
+
+section.servicos{
+padding: auto;}
+
+section.servicos > .container{
+	max-width: 100%;
+	display: flex;
+	position: relative;
+	top: -2px;
+	text-align:center;
+}
+
+#imagem{
+    max-width: 80%;
+}
+
+section.servicos > .container .box-servico:nth-of-type(1){
+	width: 50%;
+
+}
+
+section.servicos > .container .box-servico:nth-of-type(2){
+	width: 50%;
+
+}
+
+section.servicos > .container .box-servico:nth-of-type(3){
+	width: 50%;
+
+}
+
+.box-servico h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+}
+
+.box-servico p{
+    font-size: 17px;
+    color: white;
+}
+
+.legal{
+    top:-5px;
+    position: relative;
+    left: 10%;
+    max-width: 80%;   
+    background-color: #79253d;
+}
+
+/* */
+
+/*REDE SOCIAL*/
+
+.redes-sociais{
+    padding: 10px;
+    background-color: #a0113a;
+    text-align: center;
+}
+
+.redes-sociais h2{
+    font-size: 27px;
+    color: rgb(226, 217, 217);
+}
+
+.redes-sociais h3{
+    display: inline-block;
+    margin: 15px;
+    color: rgb(226, 217, 217);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.redes-sociais h3:hover{
+    color: #4e4e4c;
+}
+
+/*REDE SOCIAL*/
+
+/*SLIDES*/
+
+.slideshow-container {
+
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* ultimo e proximo*/
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* posição proximo */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* bolas */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* numero text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* botões */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* animação*/
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+
+/*Footer*/
+
+footer{
+    background-color: #d1cfca;
+    padding: 30px;
+    color: #4e4e4c;
+
+}
+
+.links{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.links h2{
+    margin: 10px;
+}
+
+.links h3{
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sobre{
+    float: right;
+    max-width: 50%;
+}
+
+footer.ultimo{
+    background: #888884;
+    text-align: center;
+}
+
+/*FIM*/
+
+
+  /* On smaller screens, decrease text size */
+@media screen and (max-width:100px){
+    section.banner{
+        max-width: 100%;
+        height: 50vh;
+        margin: 0 auto;
+    }
+
+    .chamada{
+        text-align: center;
+        position: relative;
+        transform: translate(-1%,90%);
+    }
+}
+
+@media screen and (max-width:900px){
+/*HEADER*/
+
+    .desktop{
+        display: none;
+    }
+
+    .logo h2{
+        float: left;
+        cursor: pointer;
+    }
+
+    .mobile h2{
+        position: absolute;
+        top: 0;
+        left: 400px;
+        color: #252525;
+    }
+
+    nav.mobile{
+        padding: 30px;
+        text-align: center;
+        position: relative;
+        display: block;
+        top: 15px;
+    }
+
+    nav.mobile a{
+        text-decoration: none;
+        font-size: 18px;
+        color: #656562;
+    }
+    
+    nav.mobile li{
+        list-style-type: none;
+        border: 1px solid black;
+    }
+    
+
+/*HEADER*/
+
+/*BANNER*/
+
+    section.banner{
+        max-width: 100%;
+        height: 80vh;
+        margin: 0 auto;
+    }
+    .chamada{
+        transform: translate(-1%,80%);
+    }
+
+    .chamada h2{
+        font-size: 50px;
+        color:#f4f2ec ;
+    }
+    
+    .chamada p{
+        font-size: 20px;
+        color:#f4f2ec ;
+    }
+/*FIM DO BANNER*/
+
+/*servicos*/
+
+section.servicos > .container{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+    #imagem{
+        max-width: 100%;
+    }
+    
+    section.servicos > .container .box-servico:nth-of-type(1){
+        width:100%;
+        margin: 5px;
+    }
+    
+    section.servicos > .container .box-servico:nth-of-type(2){
+        width: 100%;
+    
+    }
+    
+    section.servicos > .container .box-servico:nth-of-type(3){
+        width: 100%;
+    
+    }
+    
+    .box-servico h2{
+        font-weight: bold;
+        font-size: 25px;
+        color: white;
+        font-style: italic;
+    }
+    
+    .box-servico p{
+        font-size: 17px;
+        color: white;
+    }
+    
+    .legal{
+        position: relative;
+        left: 0;
+        max-width: 100%;   
+        background-color: #79253d;
+    }
+    
+/*servicos*/
+
+@media screen and (max-width: 1024px){
+    .banner{
+        max-width: 100%;
+        height: 80vh;
+        margin: 0 auto;
+    }
+    .chamada{
+        transform: translate(-1%,70%);
+    }
+
+    .chamada h2{
+        font-size: 50px;
+        color:#f4f2ec ;
+    }
+    
+    .chamada p{
+        font-size: 20px;
+        color:#f4f2ec ;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .mobile h2{
+        position: absolute;
+        top: 0;
+        left: 250px;
+        color: #252525;
+    }
+
+    nav.mobile{
+        padding: 50px;
+        text-align: center;
+        display: block;
+        position: relative;
+        top: 15px;
+    }
+
+    nav.mobile a{
+        text-decoration: none;
+        font-size: 18px;
+        color: #656562;
+    }
+    
+    nav.mobile li{
+        list-style-type: none;
+        border: 1px solid black;
+    }
+
+
+    .links{
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin: 5px;
+    }
+    
+    .links h2{
+        margin: 5px;
+    }
+    
+    .sobre{
+        float: right;
+        max-width: 100%;
+    }
+    
+
+}
+
+}
+  
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
